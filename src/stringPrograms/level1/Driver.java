@@ -1,9 +1,12 @@
 package stringPrograms.level1;
 
-public class Driver {
-    private static ImplementationClass imp1 = new ImplementationClass();
+import java.util.Scanner;
 
+public class Driver {
+    private final static ImplementationClass imp1 = new ImplementationClass();
+    private final static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        imp1.printFibonnaciSerice(10);
+        System.out.println("Enter Number for Fibonnaci Series: ");
+        imp1.printFibonnaciSeries(sc.nextInt());
     }
 }
