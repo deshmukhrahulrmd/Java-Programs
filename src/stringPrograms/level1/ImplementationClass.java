@@ -43,4 +43,14 @@ public class ImplementationClass implements QueRequirement{
         IntStream.range(0, num.length).filter(n->n%2==0).map(i->num[i]).forEach(j-> System.out.print(j+" "));
     }
 
+    @Override
+    public boolean checkPalindrome(int num){
+        String n = String.valueOf(num);
+        String rev = IntStream.rangeClosed(1, n.length()).
+                mapToObj(i->n.charAt(n.length()-i)).
+                collect(StringBuilder::new, StringBuilder::append, StringBuilder::append).
+                toString();
+        return n.equals(rev);
+    }
+
 }

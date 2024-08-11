@@ -5,4 +5,5 @@ public interface QueRequirement {
      long countOfWords(String s);
      double medianOfArray(int[] arr);
      void printAlternateElements(int[] arr);
+     boolean checkPalindrome(int num);
 }

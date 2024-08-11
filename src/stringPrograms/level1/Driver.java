@@ -25,7 +25,7 @@ public class Driver {
             arr[i] = sc.nextInt();
         }
         System.out.println("The median of array is: " + imp1.medianOfArray(arr));
-         */
+
 
         // 4. Print alternate words in string
         System.out.println("Enter a size of Array: ");
@@ -36,5 +36,9 @@ public class Driver {
         }
         System.out.println("Printing: ");
         imp1.printAlternateElements(arr1);
+         */
+
+        System.out.println("Enter a number: ");
+        System.out.println(imp1.checkPalindrome(sc.nextInt())?"The number is Palindrome":"The number is Not Palindrome");
     }
 }
